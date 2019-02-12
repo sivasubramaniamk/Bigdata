@@ -1,0 +1,1 @@
+sqlc.sql("select customerNumber,customerName,concat(contactFirstName,' ',contactLastName) as contactfullname,addressLine1,city,state,postalCode,country,phone,creditLimit,checknumber,amount,paymentdate from cust_payment ").createOrReplaceTempView("custdetcomplextypes")
